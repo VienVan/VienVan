@@ -1,0 +1,46 @@
+$logo-font: Inconsolata;
+body {
+  background: linear-gradient(rgba(255, 251, 125, .55), rgba(255, 251, 125, .55)), url('pattern_eyes2_600.jpg');;
+}
+// .middle-square {
+//   width: 500px;
+//   height: 300px;
+//   border: 1px solid black;
+//   background: rgba(0, 0, 0, .3);
+//   color: white;
+//   font-size: 100px;
+//   text-align: center;
+//   text-shadow: 0 0 10px black;
+//   margin: 0 auto;
+//   padding: 50px;
+// }
+.brand {
+  font-size: 150px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: rgba(150, 150, 150, 1);
+  // text-shadow: 0 0 10px black;
+  margin-right: 30px;
+  font-family: $logo-font;
+  font-weight: bolder;
+}
+
+.van {
+    color: red;
+    background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 5s infinite linear;
+    text-shadow: none;
+}
+
+@-webkit-keyframes hue {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+    }
+
+    to {
+      -webkit-filter: hue-rotate(360deg);
+    }
+}
