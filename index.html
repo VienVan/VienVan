@@ -1,23 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="personalWebsite">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vien Van</title>
     <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
-
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="main.css">
+    <script src='bower_components/angular/angular.min.js'></script>
+    <script src='bower_components/angular-ui-router/release/angular-ui-router.min.js'></script>
     <script src="app.js"></script>
 
   </head>
-  <body>
-  <div class='container-fluid'>
-      <div class='middle-square'></div>
-      <span class='brand'>Vien <span class='van'>Van</span></span>
 
+  <div class='container-fluid' ng-controller="Ctrl">
+      <div class='main-content'>
+        <!-- <p><strong>who i am:</strong> small-ish vietnamese guy who cuts fruits really well</p>
+        <p><strong>what i do:</strong> full stack developer (got an idea? i'll bring it to life)</p>
+        <p><strong>where i stay:</strong> san francisco, california</p>
+        <p><strong>things i like:</strong> code, ice-cream, books</p>
+        <p><strong>what this website does:</strong> absolutely nothing</p> -->
+        <!-- <label for="things-you-like">name something really sick</label> -->
+        <div class='stuff'>
+          <input id='model' ng-model='random' placeholder="Type a real word"><br/>
+          <button id='question' ng-click='randomGiph()'>?</button><br/>
+          <img class='img' ng-src='{{img}}' height="250px" width="250px">
+      </div>
+      </div>
+      <span class='brand'>Vien <span class='van'>Van</span></span>
   </div>
 
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->

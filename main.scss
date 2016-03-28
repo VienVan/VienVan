@@ -1,25 +1,16 @@
 $logo-font: Inconsolata;
 body {
+  font-family: Inconsalata;
   background: linear-gradient(rgba(255, 251, 125, .55), rgba(255, 251, 125, .55)), url('pattern_eyes2_600.jpg');;
 }
-// .middle-square {
-//   width: 500px;
-//   height: 300px;
-//   border: 1px solid black;
-//   background: rgba(0, 0, 0, .3);
-//   color: white;
-//   font-size: 100px;
-//   text-align: center;
-//   text-shadow: 0 0 10px black;
-//   margin: 0 auto;
-//   padding: 50px;
-// }
+
 .brand {
   font-size: 150px;
   position: absolute;
   bottom: 0;
   right: 0;
-  color: rgba(150, 150, 150, 1);
+  // color: black;
+  color: rgba(0, 0, 0, 1);
   // text-shadow: 0 0 10px black;
   margin-right: 30px;
   font-family: $logo-font;
@@ -43,4 +34,37 @@ body {
     to {
       -webkit-filter: hue-rotate(360deg);
     }
+}
+
+img {
+  margin-top: 2%;
+  border-radius: 5px;
+  box-shadow: 0 0 5px white;
+}
+
+.stuff {
+  text-align: center;
+  margin-right: 275px;
+}
+
+input {
+  padding: 10px;
+  font-size: 20px;
+  margin-top: 50px;
+}
+#question {
+  margin-top: 1%;
+  color: red;
+  font-size: 80px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: transparent;
+  font-weight: bolder;
+}
+
+#question:hover {
+  color: white;
+  cursor: hand;
+  border: none;
 }
